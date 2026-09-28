@@ -26,5 +26,7 @@ Route::get('/mahasiwa', function () {
 Route::get('/mahasiswa', function () {
     return 'Halo Mahasiswa';
 });
+use App\Http\Controllers\HomeController;
+Route:: get('/home',[HomeController::class,'index']);
 
 Route::get('/mahasiwa/{param1}',[MahasiwaController::class,'show']);
