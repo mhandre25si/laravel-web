@@ -182,29 +182,27 @@ public function login(Request $request)
 
             <div class="col-md-6">
                 {{-- Alerts --}}
-                <div class="card ">
-                    <div class="card-body">
-                        <h3 class="h5 mb-3">Alerts</h3>
-                        <div class="alert alert-primary mb-2">Informational alert</div>
-                        <div class="alert alert-success mb-2">Success alert</div>
-                        <div class="alert alert-warning mb-2">Warning alert</div>
-                        <div class="alert alert-danger mb-0">Danger alert</div>
-                    </div>
-                </div>
 
-                {{-- Buttons --}}
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="h5 mb-3">Buttons</h3>
-                        <div class="d-flex flex-wrap gap-2">
-                            <button class="btn btn-primary">Primary</button>
-                            <button class="btn btn-secondary">Secondary</button>
-                            <button class="btn btn-outline-primary">Outline</button>
-                            <button class="btn btn-success">Success</button>
-                            <button class="btn btn-danger">Danger</button>
-                        </div>
-                    </div>
-                </div>
+    <div class="card-body">
+        <h5 class="card-title">Form Pertanyaan</h5>
+
+        <form action="" method="POST">
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="pertanyaan" class="form-label">Pertanyaan</label>
+                <textarea class="form-control" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim Pertanyaan</button>
+        </form>
+    </div>
+</div>
 
                 {{-- Table --}}
                 <div class="card">
