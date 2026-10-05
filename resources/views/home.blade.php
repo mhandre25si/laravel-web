@@ -92,6 +92,29 @@
     <input type="password" name="password">
     <button type="submit">Submit</button>
 </form>
+$.ajax({
+    url: 'auth/login',
+    method: 'POST',
+    data: {
+        username: 'john',
+        password: '12345'
+    },
+    success: function(response) {
+        console.log('Data submitted successfully');
+    },
+    error: function(xhr, status, error) {
+        console.log('Error occurred: ' + error);
+    }
+});
+public function login(Request $request)
+{
+    // semua data form
+    dd($request->all());
+
+    // ambil spesifik input
+    $username = $request->input('username');
+    $password = $request->input('password');
+}
     <!-- Content Section -->
     <section id="content" class="container ">
         <div class="row">
