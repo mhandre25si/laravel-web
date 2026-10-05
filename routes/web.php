@@ -30,5 +30,3 @@ use App\Http\Controllers\HomeController;
 Route:: get('/home',[HomeController::class,'index']);
 
 Route::get('/mahasiwa/{param1}',[MahasiwaController::class,'show']);
-Route::post('question/store', [QuestionController::class, 'store'])
-		->name('question.store');
