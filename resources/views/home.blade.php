@@ -87,7 +87,11 @@
 
         </div>
     </section>
-
+<form action="auth/login" method="POST">
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <button type="submit">Submit</button>
+</form>
     <!-- Content Section -->
     <section id="content" class="container ">
         <div class="row">
