@@ -33,3 +33,9 @@ Route::get('/mahasiwa/{param1}',[MahasiwaController::class,'show']);
 
 Route::post('question/store', [QuestionController::class, 'store'])
 		->name('question.store');
+
+
+route::get ('/home-question-respon',function(){
+    return view('home-question-respon');
+    })->name('home-question-respon');
+
