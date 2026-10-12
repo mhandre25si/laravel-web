@@ -61,7 +61,7 @@
         </blockquote>
 
         <p class="email-info mt-4">
-            Pertanyaan Anda akan segera kami tanggapi dan balas melalui email <strong>{{$email}}</strong>.<br><br>
+            Pertanyaan Anda akan segera kami tanggapi dan balas melalui email <strong>{{session('email')}}</strong>.<br><br>
             Mohon cek kotak masuk atau folder spam Anda secara berkala.
         </p>
 
