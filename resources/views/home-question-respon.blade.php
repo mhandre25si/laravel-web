@@ -50,7 +50,11 @@
     </style>
 </head>
 <body>
-
+@if (session('info'))
+    <div class="alert alert-info">
+        {!! session('info') !!}
+    </div>
+@endif
     <div class="thankyou-container">
         <h2>Terima Kasih, {{session('nama')}}</h2>
         <p class="lead">Pertanyaan Anda telah berhasil dikirim.</p>

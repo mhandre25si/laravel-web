@@ -158,7 +158,11 @@
 
     <div class="card-body">
         <h5 class="card-title">Form Pertanyaan</h5>
-
+            @if (session('info'))
+            <div class="alert alert-info">
+            {!! session('info') !!}
+            </div>
+            @endif
             <form action="{{ route('question.store') }}" method="POST">
 	             @csrf
             <div class="mb-3">
