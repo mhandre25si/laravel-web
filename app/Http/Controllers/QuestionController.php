@@ -25,7 +25,7 @@ class QuestionController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store()
+    public function store(Request $request)
     {
        $request->validate([
             'nama'  => 'required|max:10',
@@ -35,9 +35,10 @@ class QuestionController extends Controller
        $data['email']  =$request->email;
        $data['pertanyaan']  =$request->pertanyaan;
 
+       return view ('home-question-respon',  $data);
        return redirect()->route('home');
         return redirect()->back();
-        return redirect()->away('http://127.0.0.1:8000/home');
+        return redirect()->away('https://www.example.com');
     }
 
     /**
