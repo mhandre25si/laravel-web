@@ -37,7 +37,7 @@ class QuestionController extends Controller
 
        return redirect()->route('home');
         return redirect()->back();
-        return redirect()->away('https://www.example.com');
+        return redirect()->away('http://127.0.0.1:8000/home');
     }
 
     /**
