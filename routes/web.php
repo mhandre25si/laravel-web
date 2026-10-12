@@ -38,4 +38,7 @@ Route::post('question/store', [QuestionController::class, 'store'])
 route::get ('/home-question-respon',function(){
     return view('home-question-respon');
     })->name('home-question-respon');
+use App\Http\Controllers\DashboardController;
+Route::get ('dashboard', [DashboardController::class,'index'])->name('dashboard');
+
 
