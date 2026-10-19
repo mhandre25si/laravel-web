@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MahasiwaController;
 use App\http\Controllers\QuestionController;
+use App\Models\Pelanggan;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -41,4 +42,5 @@ route::get ('/home-question-respon',function(){
 use App\Http\Controllers\DashboardController;
 Route::get ('dashboard', [DashboardController::class,'index'])->name('dashboard');
 
-
+use App\http\Controllers\PelangganController;
+Route::resource('pelanggan', PelangganController::class);
