@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MahasiwaController;
 use App\http\Controllers\QuestionController;
-use App\Models\Pelanggan;
 Route::get('/', function () {
     return view('welcome');
 });
