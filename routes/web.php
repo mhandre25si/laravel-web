@@ -43,3 +43,7 @@ Route::get ('dashboard', [DashboardController::class,'index'])->name('dashboard'
 
 use App\http\Controllers\PelangganController;
 Route::resource('pelanggan', PelangganController::class);
+
+use App\Http\Controllers\UserController;
+
+Route::resource('user', UserController::class);
